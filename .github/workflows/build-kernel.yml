@@ -14,6 +14,7 @@ jobs:
       - name: Build
         run: |
           source ./config.sh
+          bash ./install_deps.sh
           bash ./build_kernel.sh
 
       - uses: actions/upload-artifact@v3
